@@ -1,0 +1,28 @@
+.row.story
+  .col-sm-4
+    .thumbnail
+      = link_to '#' do
+        = image_tag 'sample/pic1.jpg'
+  .col-sm-8
+    h3= link_to 'A bitter sweet taste', '#'
+    small.text-muted
+      span
+        i.glyphicon.glyphicon-time
+        |  Posted 3 days ago
+      span
+        | &nbsp;&nbsp;
+      span
+        i.glyphicon.glyphicon-comment
+        |  10K comments
+    hr/
+    p
+      | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+    p
+      = link_to '#', class: 'btn-link' do
+        | Read Full Story
+        span.glyphicon.glyphicon-arrow-right
+
+    .tags
+      .label.label-default Voilin
+      .label.label-default Location: New York

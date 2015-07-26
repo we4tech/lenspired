@@ -1,0 +1,74 @@
+.home {
+  .container-fluid {
+  }
+
+  .jumbotron {
+    margin-top: 0;
+    margin: -20px -15px 0 -15px;
+    border-radius: 0;
+    text-align: center;
+
+    h1 {
+      text-transform: uppercase;
+      color: #fff!important;
+      line-height: 100px;
+    }
+
+    p.font-subtitle {
+      color: #ccc;
+      font-size: 250%;
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    p {
+      margin-top: 5%;
+    }
+
+    .btn-primary {
+      padding: 15px 20px;
+      -webkit-border-radius: 365px 365px 365px 365px;
+      border-radius: 365px 365px 365px 365px;
+      background: #f05f40;
+    }
+  }
+
+  .features {
+    background: #f05f40;
+    margin-top: 50px;
+    padding: 20px;
+    color: #fff;
+
+    .feature {
+      h4 {
+        font-size: 150%;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 100%;
+      }
+    }
+  }
+}
+
+.recent-stories {
+  margin-top: 20px;
+
+  &> h2 {
+    margin-top: 10px;
+  }
+
+  .story {
+    h3 {
+      margin-top: 0;
+    }
+
+    .tags {
+      .label {
+        margin-right: 10px;
+      }
+    }
+  }
+}
