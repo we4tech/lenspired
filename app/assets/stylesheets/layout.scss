@@ -27,6 +27,11 @@ body {
   }
 }
 
+.btn-round {
+  border-radius: 365px 365px 365px 365px;
+  padding: 15px 20px;
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -54,4 +59,20 @@ body {
 
 .recent-stories {
   background: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  ul {
+    li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+  }
 }

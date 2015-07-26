@@ -44,3 +44,23 @@
         - 5.times.each do
           = render 'stories/story'
 
+  .container-fluid
+    section.row.submit-now
+      .col-md-6.col-xs-offset-3.footer.text-center
+        p.lead
+          | Submit your picture with inspiring story and let everyone smile and get inspired through the positivity.
+          |  Let's see the world through a positive vision.
+
+        = link_to '#', class: 'btn btn-primary btn-lg text-uppercase btn-round' do
+          | Upload Your Photo
+
+  .container-fluid
+    footer.row
+      .col-md-6.col-xs-offset-3
+        ul
+          li= link_to 'Contact Us', '#', class: 'btn-link'
+          li= link_to 'Terms', '#', class: 'btn-link'
+          li= link_to 'Policy', '#', class: 'btn-link'
+          li= link_to 'Contributors', '#', class: 'btn-link'
+          li= link_to 'Contribute', '#', class: 'btn-link'
+        | &copy Lenspired 
