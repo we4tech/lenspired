@@ -2,65 +2,9 @@
   == "background: url(#{image_path('banner/kite.jpg')}) 30% 0 no-repeat"
 
 .home
-  .container-fluid
-    .jumbotron.trans-bg
-      h1.font-heading.text-shadow
-        | Welcome to
-        br/
-        | The Lens's Inspired
-        br/
-        | Community
-      p.font-subtitle.text-shadow
-        | Let's share the positivity through the lens and heartful of passion.
-
-      p
-        == link_to 'Browse Stories', '#', class: 'btn btn-primary btn-lg text-uppercase'
-
-  .container-fluid
-    section.row.features
-      .col-sm-4.feature
-        h4 Capture Photograph
-        p
-          | Got a camera ? get it utilized by capturing the moments of truth, love and inspirations from the known surroundinds.
-
-
-      .col-sm-4.feature
-        h4 Tell Story
-        p
-          | We all are storytellers, we hide our own story and listen to other's. But why don't we just untap the stories and inspire thousands other.
-
-      .col-sm-4.feature
-        h4 Share Positivity
-        p
-          | We do live in a country with full of negativity. Hey, we know that, why don't we come up with something that inspires and forges other perception ?
-
-
-  .container-fluid
-    section
-      .col-md-12.recent-stories
-        h2.page-header
-          | Recent Stories
-
-        - 5.times.each do
-          = render 'stories/story'
-
-  .container-fluid
-    section.row.submit-now
-      .col-md-6.col-xs-offset-3.footer.text-center
-        p.lead
-          | Submit your picture with inspiring story and let everyone smile and get inspired through the positivity.
-          |  Let's see the world through a positive vision.
-
-        = link_to '#', class: 'btn btn-primary btn-lg text-uppercase btn-round' do
-          | Upload Your Photo
-
-  .container-fluid
-    footer.row
-      .col-md-6.col-xs-offset-3
-        ul
-          li= link_to 'Contact Us', '#', class: 'btn-link'
-          li= link_to 'Terms', '#', class: 'btn-link'
-          li= link_to 'Policy', '#', class: 'btn-link'
-          li= link_to 'Contributors', '#', class: 'btn-link'
-          li= link_to 'Contribute', '#', class: 'btn-link'
-        | &copy Lenspired 
+  = render 'home/containers/banner'
+  = render 'home/containers/features'
+  = render 'home/containers/recent_stories'
+  = render 'home/containers/photographers'
+  = render 'home/containers/upload_photo'
+  = render 'home/containers/footer'

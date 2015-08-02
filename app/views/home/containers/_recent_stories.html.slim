@@ -1,0 +1,15 @@
+.recent-stories.container-fluid style='background: #f0f0f0'
+  .container
+    section
+      .col-md-12
+        h2.page-header.font-heading
+          | RECENT STORIES
+
+        .row
+          - 6.times.each do
+            = render 'stories/story'
+
+        .text-center
+          = link_to '#', class: 'btn btn-round btn-default' do
+            | Read All Stories
+            span &nbsp;&rarr;

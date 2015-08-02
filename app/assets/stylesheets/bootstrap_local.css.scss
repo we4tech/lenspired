@@ -1,0 +1,8 @@
+@import 'bootstrap-sprockets';
+@import '_bootstrap';
+
+@import 'font-awesome-sprockets';
+$fa-font-path:   "../assets/font-awesome";
+
+@import 'font-awesome';
+@import 'bootstrap-social';

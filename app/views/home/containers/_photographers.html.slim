@@ -1,0 +1,15 @@
+.photographers.container-fluid
+  .container
+    .col-md-12.text-center
+      h2.page-header.font-heading PHOTOGRPAHERS
+
+      .row
+        - 6.times.each do
+          = render 'photographer'
+
+      = link_to '#', class: 'btn btn-round btn-default' do
+        | View All Photographers
+        span &nbsp;&rarr;
+
+
+

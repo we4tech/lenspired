@@ -39,6 +39,10 @@ gem 'oj'
 gem 'oj_mimic_json'
 gem 'active_model_serializers'
 
+# Assets
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
+
 # Tools
 # Manage image upload and manipulation 
 gem "refile", require: "refile/rails"
@@ -69,8 +73,8 @@ group :development, :test do
 end
 
 source 'https://rails-assets.org' do
-  gem 'rails-assets-bootstrap'
   gem 'rails-assets-leaflet'
   gem 'rails-assets-wowjs'
+  gem 'rails-assets-bootstrap-social'
 end
 

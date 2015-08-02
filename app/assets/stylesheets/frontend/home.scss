@@ -1,0 +1,129 @@
+.home {
+  .container-fluid {
+  }
+
+  .jumbotron {
+    margin-top: 0;
+    margin: -20px -15px 0 -15px;
+    border-radius: 0;
+    text-align: center;
+
+    h1 {
+      text-transform: uppercase;
+      color: #fff!important;
+      line-height: 100px;
+    }
+
+    p.font-subtitle {
+      color: #ccc;
+      font-size: 250%;
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    p {
+      margin-top: 5%;
+    }
+
+    .btn-primary {
+      padding: 15px 20px;
+      -webkit-border-radius: 365px 365px 365px 365px;
+      border-radius: 365px 365px 365px 365px;
+      background: #f05f40;
+    }
+  }
+
+  .features {
+    background: #f05f40;
+    margin-top: 50px;
+    padding: 20px;
+    color: #fff;
+
+    .feature {
+      h4 {
+        font-size: 150%;
+        font-weight: bolder;
+        text-transform: uppercase;
+      }
+
+      p {
+        line-height: 30px;
+        font-size: 100%;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .submit-now {
+    background: #000;
+    color: #fff;
+    padding: 80px 0;
+    p {
+      line-height: 40px;
+    }
+    .btn {
+      margin-top: 20px;
+    }
+  }
+
+  .recent-stories {
+    .container {
+      background: transparent;
+      margin-bottom: 30px;
+    }
+
+    h2.page-header {
+      margin: 50px 0;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .story {
+      text-align: center;
+      .thumbnail {
+        padding: 0;
+      }
+
+      h3 {
+        margin: 5px 0;
+      }
+    }
+  }
+
+  .photographers {
+    margin-bottom: 30px;
+
+    h2.page-header {
+      margin: 50px 0;
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 0;
+    }
+
+    .photographer {
+      .thumbnail {
+        padding: 0;
+        border: 0;
+
+        img {
+          width: 100%;
+          max-height: 150px;
+          border-radius: 50%;
+        }
+
+        .caption {
+          text-align: center;
+
+          h4 {
+            margin: 5px 0;
+            font-size: 120%;
+          }
+
+          .btn-toolbar {
+
+          }
+        }
+      }
+    }
+  }
+}
