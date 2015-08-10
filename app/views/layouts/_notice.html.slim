@@ -1,0 +1,18 @@
+- notice = flash[:notice]
+- success = flash[:success]
+
+- if notice.present?
+  .container-fluid.flash_message
+    .alert.alert-warning
+      small.glyphicon.glyphicon-warning-sign
+      | &nbsp;&nbsp;
+      == notice
+      a.close href='#' data-dismiss="alert" &times;
+
+- if success.present?
+  .container-fluid.flash_message
+    .alert.alert-success
+      small.glyphicon.glyphicon-info-sign
+      | &nbsp;&nbsp;
+      == success
+      a.close href='#' data-dismiss="alert" &times;

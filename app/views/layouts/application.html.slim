@@ -1,12 +1,13 @@
 doctype html
 html
   head
-    title Lenspired
+    title Lenspired - #{yield(:title).presence || 'Get Inspired'}
     == stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     == csrf_meta_tags
 
-  body style= yield(:body_style)
+  body style=body_style
     == render 'layouts/navigation'
+    == render 'layouts/notice'
     == yield
 
     style

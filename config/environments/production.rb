@@ -78,4 +78,6 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.react.variant = :production
+
+  config.action_mailer.default_url_options = { host: 'www.lenspired.co', port: 80 }
 end

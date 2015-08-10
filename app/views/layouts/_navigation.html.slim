@@ -7,7 +7,7 @@ nav.navbar.navbar-default.trans-bg#top-navigation
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand href="#" Lenspired
+      a.navbar-brand href=root_path Lenspired
     /! Collect the nav links, forms, and other content for toggling
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
@@ -19,9 +19,25 @@ nav.navbar.navbar-default.trans-bg#top-navigation
           a href="#"
             span.glyphicon.glyphicon-plus
             |  Submit
-        li
-          a href="#" Signup
-        li
-          a href='#'
-            span.glyphicon.glyphicon-log-in
-            |  Signin
+
+        - if user_signed_in?
+          li.dropdown
+            a.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"
+              = truncate(current_user.name, length: 10)
+              span.caret
+            ul.dropdown-menu
+              li
+                = link_to 'Update Profile', edit_user_registration_path
+              li
+                a href="#"  My Stories
+              li
+                a href="#"  Add New Story
+              li.divider role="separator"
+              li
+                = link_to 'Sign out', destroy_user_session_path, method: :delete
+        - else
+          li
+            a href= new_user_registration_path
+              | Signup
+          li
+            a href= new_user_session_path Signin
