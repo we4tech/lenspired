@@ -3,9 +3,11 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
-  resources :stories do
-    member do
-      get :slug
+  namespace :users do
+    resources :stories, controller: 'stories' do
+      member do
+        get :slug
+      end
     end
   end
 

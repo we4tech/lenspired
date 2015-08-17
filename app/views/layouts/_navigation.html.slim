@@ -16,7 +16,7 @@ nav.navbar.navbar-default.trans-bg#top-navigation
             | Home
             span.sr-only (current)
         li
-          a href="#"
+          a href=new_users_story_path
             span.glyphicon.glyphicon-plus
             |  Submit
 
@@ -31,7 +31,7 @@ nav.navbar.navbar-default.trans-bg#top-navigation
               li
                 a href="#"  My Stories
               li
-                a href="#"  Add New Story
+                a href=new_users_story_path  Add New Story
               li.divider role="separator"
               li
                 = link_to 'Sign out', destroy_user_session_path, method: :delete

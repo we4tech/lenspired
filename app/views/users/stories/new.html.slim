@@ -1,0 +1,33 @@
+#story-new
+  .container
+    .row
+      .col-sm-12.col-md-8.col-md-offset-2
+        .well.trans-bg-white
+          h1
+            - if @story.new_record?
+              | New Story
+            - else
+              | Edit #{@story.title}
+
+          = form_for [:users, @story], html: {class: 'form'} do |f|
+
+            .form-group
+              = f.label :title
+              = f.text_field :title, class: 'form-control', maxlength: 255
+
+            .form-group
+              = f.label :description, 'Story beyond the photograph'
+              = f.text_area :description, class: 'form-control', rows: 10
+
+            .form-group
+              = f.label :tag_list, 'Tags'
+              = f.text_field :tag_list, class: 'form-control'
+
+            .form-group
+              = f.label :image, 'Upload image file'
+              = f.file_field :image, class: 'form-control'
+
+            .form-group
+              .pull-right
+                = f.submit 'Submit Your Photograph', class: 'btn btn-lg btn-primary'
+              .clearfix

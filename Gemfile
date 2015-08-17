@@ -49,6 +49,7 @@ gem "refile", require: "refile/rails"
 gem "refile-mini_magick"
 gem 'react-rails', '~> 1.0'
 gem 'devise'
+gem 'acts-as-taggable-on'
 
 group :test do
   gem 'test_after_commit', '~> 0.4.1'
